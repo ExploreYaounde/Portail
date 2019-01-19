@@ -3,6 +3,7 @@ html, body, main{
 	padding: 0;
 	border: 0;
   font-family: 'Open Sans', sans-serif;
+	color: white;
 }
 a {
 	text-decoration: none;
@@ -23,7 +24,16 @@ span.about{
   padding-right:0.5%;
   float:right;
 }
-div.front{
+
+.homescreen{
+	background-image: url(montreal.jpg);
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	background-size: cover;
+}
+
+div.homescreen{
   /* Fill whole vertical height, need JS to support mobile header*/
   margin:auto;
   text-align:center;
@@ -32,29 +42,16 @@ div.front{
   width:99%;
   overflow:hidden;
 }
-.front p{
+
+.homescreen p{
   /*Puts both lines centered vertically in div*/
   line-height:1.5;
   display:inline-block;
   text-align:center;
 }
+
 #big{
-  font-size:8em
-}
-div.small{
-  background-color:rgb(239, 239, 239);
-	text-align:center;
-	padding:0;
-	position:relative;
-  /*top:85vh;
-	  position:absolute;
-		*/
-	display:inline-flex;
-  /*right:4%;
-  vertical-align:middle;
-  padding-right:1.4%;
-  padding-left:1.4%;
-	*/
+  font-size:8em;
 }
 
 header {
