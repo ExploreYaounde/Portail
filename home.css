@@ -34,17 +34,13 @@ div.homescreen{
   /* Fill whole vertical height, need JS to support mobile header*/
   height:calc(100vh - 5em);
   overflow:hidden;
-
 }
 
 .homescreen p{
   /*Puts both lines centered vertically in div*/
-  /*line-height:calc(100vh + 1.4em);
+  line-height:calc(100vh + 1.4em);
   display:block;
   text-align:center;
-	*/
-	line-height:calc(100vh - 5em);
-	text-align:center;
 }
 
 #big{
@@ -64,45 +60,30 @@ header {
 nav {
 	padding:0;
 	margin: 0;
-	width:100%;
-
 }
 nav ul{
-	list-style:none;
-	margin: 0 auto;
+	list-style-type: none;
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color:inherit;
-	text-align:center;
 
 }
 nav li {
-
-	display:inline;
+	float:left;
+	align-items:center;
 }
 li a{
 	display: inline-block;
-<<<<<<< HEAD
-	color: white;
-  text-align:center;
-  padding: 14px 16px;
-=======
   color: white;
   padding: 14px 30px;
->>>>>>> 3f6022c0941f551016822fb9561da94f05b7fb5a
   text-decoration: none;
 	line-height:2em;
-
-
 }
 li a:hover{
 	background-color:grey;
 }
 
-<<<<<<< HEAD
-.categories{
-	color:black;
-=======
 footer{
 	position: relative;
 	height: 200px;
@@ -130,5 +111,4 @@ footer ul{
 	font-size: 20px;
 	text-align: left;
 	padding-left: 6%;
->>>>>>> 3f6022c0941f551016822fb9561da94f05b7fb5a
 }
