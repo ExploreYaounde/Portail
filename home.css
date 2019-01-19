@@ -70,7 +70,7 @@ nav ul{
 
 }
 nav li {
-	float:left;
+	display:inline;
 	align-items:center;
 }
 li a{
