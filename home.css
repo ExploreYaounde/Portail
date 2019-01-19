@@ -4,26 +4,15 @@ html, body, main{
 	border: 0;
   font-family: 'Open Sans', sans-serif;
 }
-header{
-  /* Header will stay on page even when scrolling. No padding.*/
-  position:sticky;
-  background-color:rgb(239, 239, 239);
-  color:rgba(59, 54, 54, 0.861);
-  height:1.4em;
-  width:100%;
-  top:0px;
-  left:0px;
+a {
+	text-decoration: none;
+	color: white;
 }
-a.header{
-  /*Color = black */
-  color:inherit;
-  text-decoration:none;
-}
-a.header:hover{
+header a:hover{
   color:darkgrey;
   text-decoration:underline;
 }
-a.header:active{
+header a:active{
   color:white;
 }
 span.home{
@@ -60,4 +49,25 @@ div.small{
   vertical-align:middle;
   padding-right:1.4%;
   padding-left:1.4%;
+}
+
+header {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+}
+
+nav {
+	padding: 10px 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	width: 90px;
+	font-family: 'Open Sans', sans-serif;
+	padding-right: 5%;
+	padding-left: 5%;
 }
