@@ -8,10 +8,11 @@ a {
 	text-decoration: none;
 	color: white;
 }
-header a:hover{
+/*header a:hover{
   color:darkgrey;
   text-decoration:underline;
 }
+*/
 header a:active{
   color:white;
 }
@@ -66,14 +67,34 @@ header {
 }
 
 nav {
-	padding: 10px 0;
+	padding:0;
 	margin: 0;
 }
-
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:inherit;
+}
 nav li {
-	display: inline;
+	/*display: inline-block;
+	text-align:center;
+	float:left;
 	width: 90px;
 	font-family: 'Open Sans', sans-serif;
 	padding-right: 5%;
-	padding-left: 5%;
+	padding-left: 5%;*/
+	float:left;
+}
+li a{
+	display: block;
+  color: white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+	line-height:2em;
+}
+li a:hover{
+	background-color:grey;
 }
