@@ -46,8 +46,8 @@ div.homescreen{
 #big{
   font-size:8em;
 }
-#explore{
-
+.categories{
+	color:black;
 }
 header {
 	background-color: black;
