@@ -71,7 +71,6 @@ function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
 
-
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {lat: 45.4857, lng:-73.5957}
@@ -144,7 +143,6 @@ function initMap() {
 
   $('#ritzCarlton').change(function() {
     if(this.checked) {
-      alert("pushed");
       markers[0].setMap(map);
     }
     else{
@@ -400,6 +398,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         location: chateauVaudreuil,
         stopover: true
     });
+    alert("okay");
   }
 }
     // if($(#leCrystal).prop("checked") == true){
@@ -489,6 +488,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     travelMode: 'DRIVING'
   }, function(response, status) {
     if (status === 'OK') {
+      alert("hello");
       directionsDisplay.setDirections(response);
       var route = response.routes[0];
       var summaryPanel = document.getElementById('directions-panel');
