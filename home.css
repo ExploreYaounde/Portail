@@ -42,11 +42,11 @@ div.homescreen{
 	left:45%;
 	color:white;
 	font-size:2em;
-	opacity:0.6;
+	opacity:1;
 	background-color:black;
 }
 .explore:hover{
-	opacity:1;
+	opacity:0.6;
 	background-color:black;
 }
 .homescreen p{
