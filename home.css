@@ -128,3 +128,31 @@ footer ul{
 	text-align: center;
 	padding-left: 6%;
 }
+
+.categories{
+	vertical-align: middle;
+	margin: 10% 0 10% 10%;
+}
+
+button{
+	border: none;
+	background-color: white;
+	font-size: 20px;
+	text-align: left;
+	padding: 20px;
+	width: 160px;
+}
+
+button:hover{
+	background-color: #00000024;
+}
+
+.dropdown{
+	position: relative;
+}
+
+.dropdownContent{
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
