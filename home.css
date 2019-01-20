@@ -2,10 +2,9 @@ html, body, main, header, footer{
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 	color: white;
 	scroll-behavior: smooth;
-
 }
 a {
 	text-decoration: none;
@@ -94,7 +93,7 @@ li a:hover{
 	background-color:grey;
 }
 
-footer{
+.footer{
 	position: relative;
 	height: 230px;
 	bottom: 0;
@@ -102,28 +101,26 @@ footer{
 	padding-top: 2%;
 	padding-bottom: 2%;
   background-color: black;
-  text-align: center;
 }
 
 .contactinfo{
 	display: inline-block;
-	padding: 1% 3%;
+	padding-top: 1%;
 	list-style: none;
 }
 
 .contactBlock{
-	text-align: center;
+	margin-left: 17%;
 }
 
-footer ul{
-	padding-bottom: 5%;
+.contactBlock ul{
+	text-align: center;
 }
 
 #contactTitle{
 	color: #9e9e9ecc;
 	font-size: 20px;
 	text-align: center;
-	padding-left: 6%;
 }
 
 .categories{
@@ -215,4 +212,21 @@ footer ul{
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
+}
+
+h2{
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	margin: auto auto 5% auto;
+	width: 10%;
+	padding: 1%;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+}
+
+h2:hover{
+	background-color: black;
+	color: white;
 }
