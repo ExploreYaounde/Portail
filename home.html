@@ -7,12 +7,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Montreal</title>
+
     <link href="home.css" rel="stylesheet" type="text/css" />
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-    <script type="text/javascript" src="home.js"></script>
+
   </head>
 
   <body>
@@ -76,6 +77,19 @@
       </div>
     </main>
 
+    <style>
+      #map {
+        height: 600px;
+        width: 50%;
+      }
+    </style>
+    <div id="map"></div>
+    <script type="text/javascript" src="home.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlgFE88zLZjibX_uz2evLZtect3hWk0Gw&callback=initMap"
+      type="text/javascript">
+    </script>
+
     <footer>
       <h3 id="contactTitle">Contact Us</h3>
       <div class="contactBlock">
@@ -98,6 +112,7 @@
       </div>
 
     </footer>
+
   </body>
 
 </html>
