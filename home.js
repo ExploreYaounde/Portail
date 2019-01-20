@@ -80,6 +80,38 @@ function initMap() {
   addMarker(interContinental);
   // markers[9].push(marker);
   // setMapOnAll(null);
+  var laRonde = {lat:45.522, lng:-73.5346};
+  addMarker(laRonde);
+  var mountRoyal = {lat:45.5071, lng:-73.5874};
+  add(mountRoyal);
+  var notreDame = {lat:45.5045, lng:-73.556};
+  add(notreDame);
+  var olympicStadium = {lat:45.558, lng:-73.5519};
+  add(olympicStadium);
+  var mountRoyalPark = {lat:45.505, lng:-73.5878};
+  add(mountRoyalPark);
+  var oldMontreal = {lat:45.5075, lng:-73.5544};
+  add(oldMontreal);
+  var biosphereMuseum = {lat:45.5139, lng:-73.5314};
+  add(biosphereMuseum);
+  var glowParty = {lat:45.4773, lng:-73..5927};
+  add(glowParty);
+  var iglooFest = {lat:45.5074, lng:-73.548};
+  add(iglooFest);
+  var fireworks = {lat:45.5043, lng:-73.5496};
+  add(fireworks);
+  var lanZhou = {lat:45.5078, lng:-73.5596};
+  add(lanZhou);
+  var imperial = {lat:45.5076, lng:-73.5594};
+  add(imperial);
+  var deliceOriental = {lat:45.4929, lng:-73.5801};
+  add(deliceOriental);
+  var laBanquise = {lat:45.5253, lng:-73.575};
+  add(laBanquise);
+  var mooseBawr = {lat:45.4936, lng:-73.5797};
+  add(mooseBawr);
+  var orangeJulep = {lat:45.4957, lng: -73.6567};
+  add(orangeJulep);
 
 
   $('#ritz').change(function() {
@@ -240,7 +272,6 @@ function addMarker(location) {
 
 
 
-<<<<<<< HEAD
 // function initMap() {
 //   // Map options
 //   var options = {
@@ -275,25 +306,6 @@ function addMarker(location) {
 //       // icon:
 //     });
 //   }
-=======
-  // Listen for click on map
-  google.maps.event.addListener(map, 'click', function(event) {
-    // Add marker
-    addMarker(event.latLng);
-  });
-  var myLatLong = event.latLng;
-  addMarker({lat: 45.4857, lng:-73.5957});
-
-  // Add marker function
-  function addMarker(coords) {
-    var marker = new google.maps.Marker({
-      position: coords,
-      map: map,
-      // icon:
-    });
-  }
-}
->>>>>>> 0d77a9d677dfa990b61996f1bab06b83ff3e1230
 //
 //   document.getElementById('submit').addEventListener('click', function() {
 //     calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -351,7 +363,6 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   };
 }
-
