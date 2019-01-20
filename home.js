@@ -66,7 +66,7 @@ var deliceOriental;
 var laBanquise;
 var mooseBawr;
 var orangeJulep;
-var hotel;
+var hotel="";
 
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
@@ -552,6 +552,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     optimizeWaypoints: true,
     travelMode: 'DRIVING'
   }, function(response, status) {
+    if (hotel == "") {
+      window.alert("Please choose a hotel as start point.")
+    }
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
       var route = response.routes[0];
