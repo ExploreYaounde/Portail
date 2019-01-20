@@ -16,14 +16,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
     <script type="text/javascript" src="home.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
 
   </head>
 
   <body>
 
     <header>
-      <div class="test">
       <nav>
         <ul>
             <li><a href="#Hotels"> Explore Montreal!</a></li>
@@ -34,11 +33,10 @@
             <li><a href="#contactTitle">About</a></li>
         </ul>
       </nav>
-      </div>
     </header>
 
-       <main>
-       <div class="homescreen">
+      <main>
+       <div class="homescreen" id="top">
         <p><span id="big">Welcome to Montreal</span></p>
         <p></p>
        </div>
@@ -47,6 +45,7 @@
        </div>
         <div class="categories">
         <div class="category" id="Hotels">Hotels</div>
+<<<<<<< HEAD
         <label class="container">Ritz-Carlton Hotel
           <input  type="checkbox" id = "ritzCarlto" onclick="myFunction(this.id,'text1')">
           <p id="text1" style="display:none">Known as the Grande Dame of Sherbrooke Street, Ritz-Carlton Montreal has been setting the bar for luxury hotels in Montreal since 1912. Today, the property continues its reign following a $200-million transformation. From the rooftop pool and full-service Spa St. James, to the romantic cuisine at Maison Boulud and legendary Afternoon Tea at Palm Court, the Ritz-Carlton Montreal invites you to see what luxury looks like</p> 
@@ -55,6 +54,14 @@
         <label class="container">Hôtel Le Crystal
           <input  type="checkbox" id = "leCrystal" onclick="myFunction(this.id,'text2')">
           <p id="text2" style="display:none">With over 6,000 square feet of meeting and event venues just one block from the Centre Bell, the meeting venues at Hôtel Le Crystal Montréal provide privacy and comfort for board meetings, brainstorming sessions, sales conferences, training seminars, working lunches, cocktails, gala nights and more. Each conference and wedding venue at Hôtel Le Crystal Montréal features state-of-the-art audiovisual equipment and large picture windows that flood the space with natural light and city views.</p>
+=======
+        <label for="ritzCarlton" class="container"> Ritz-Carlton Hotel
+          <input id="ritzCarlton" type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label for="leCrystal" class="container">Hôtel Le Crystal
+          <input id="leCrystal" type="checkbox">
+>>>>>>> e762740c0f6c36a664fa6bdb06160c6036f77408
           <span class="checkmark"></span>
         </label>
         <label class="container">Sofitel Montréal Le Carré Doré
@@ -72,9 +79,14 @@
           <p id="text5" style="display:none">Less than an hour outside Montreal, Château Vaudreuil Hotel & Suites showcases approachable luxury in a marvellous waterfront setting.</p>         
           <span class="checkmark"></span>
         </label>
+<<<<<<< HEAD
         <label class="container">Le Mount Stephen
           <input  type="checkbox" id = "mountStephen" onclick="myFunction(this.id,'text6')">           
           <p id="text6" style="display:none">Montreal’s newest luxury boutique hotel, Le Mount Stephen combines neoclassicism and contemporary lines in a subdued environment. We provide 90 prestigious rooms and suites, all featuring floor-to-ceiling windows, exclusive beds, Cura chromotherapy rainfall showerheads and in some cases, a private terrace. Beyond our rooms, we offer more than 6,500 square feet of elegant event space, an on-site spa and fitness centre, and our own British-inspired restaurant, Bar George.</p>         
+=======
+        <label for="mountStephen" class="container">Le Mount Stephen
+          <input id="mountStephen" type="checkbox">
+>>>>>>> e762740c0f6c36a664fa6bdb06160c6036f77408
           <span class="checkmark"></span>
         </label>
         <label class="container">Hotel Place d'Armes
@@ -98,110 +110,110 @@
           <span class="checkmark"></span>
         </label>   
         <div class="category" id="Attractions">Attractions</div>
-        <label class="container">La Ronde
-          <input type="checkbox">
+        <label for="laRonde" class="container">La Ronde
+          <input id="laRonde" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Mount Royal
-          <input type="checkbox">
+        <label for="mountRoyal" class="container">Mount Royal
+          <input id="mountRoyal" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Notre-Dame Basilica of Montreal
-          <input type="checkbox">
+        <label for = "notreDame" class="container">Notre-Dame Basilica of Montreal
+          <input id="notreDame" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Olympic Stadium
-          <input type="checkbox">
+        <label for="olympicStadium" class="container">Olympic Stadium
+          <input id="olympicStadium" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Mount Royal Park
-          <input type="checkbox">
+        <label for = "mountRoyalPark" class="container">Mount Royal Park
+          <input id="mountRoyalPark" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Old Montreal
-          <input type="checkbox">
+        <label for = "oldMontreal" class="container">Old Montreal
+          <input id= "oldMontreal" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Biosphere Environmental Museum
-          <input type="checkbox">
+        <label for = "biosphereMuseum" class="container">Biosphere Environmental Museum
+          <input id= "biosphereMuseum" type="checkbox">
           <span class="checkmark"></span>
         </label>
         <div class="category" id="Events">Events</div>
-        <label class="container">Montreal Glow Party 2019
-          <input type="checkbox">
+        <label for = "glowParty" class="container">Montreal Glow Party 2019
+          <input id="glowParty" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">IglooFest 2019
-          <input type="checkbox">
+        <label for = "iglooFest" class="container">IglooFest 2019
+          <input id= "iglooFest" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Old Port Fireworks
-          <input type="checkbox">
+        <label for = "fireworks" class="container">Old Port Fireworks
+          <input id="fireworks" type="checkbox">
           <span class="checkmark"></span>
         </label>
         <div class="category" id="Restaurants">Restaurants</div>
-        <label class="container">Nouilles de Lan Zhou
-          <input type="checkbox">
+        <label for = "lanZhou" class="container">Nouilles de Lan Zhou
+          <input id = "lanZhou" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Restaurant Impérial
-          <input type="checkbox">
+        <label for = "imperial" class="container">Restaurant Impérial
+          <input id= "imperial" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Délice oriental
-          <input type="checkbox">
+        <label for = "deliceOriental" class="container">Délice oriental
+          <input id= "deliceOriental" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">La Banquise
-          <input type="checkbox">
+        <label for ="laBanquise" class="container">La Banquise
+          <input id="laBanquise" type="checkbox">
           <span class="checkmark"></span>
         </label>
-         <label class="container">Moose Bawr
-          <input type="checkbox">
+         <label for="mooseBawr" class="container">Moose Bawr
+          <input id="mooseBawr" type="checkbox">
           <span class="checkmark"></span>
         </label>
-         <label class="container">Orange Julep
-          <input type="checkbox">
+         <label for="orangeJulep" class="container">Orange Julep
+          <input id="orangeJulep" type="checkbox">
           <span class="checkmark"></span>
         </label>
       </div>
+      <div class="mainButtonContainer">
+        <button id = "iterate">Create Iternerary!</button>
+      </div>
     </main>
-
-
     <style>
-      #map {
-        height: 700px;
-        width: 50%;
-      }
     </style>
     <div id="map"></div>
+    <div id="right-panel">
+    <div id="directions-panel"></div>
+  </div>
     <script type="text/javascript" src="home.js"></script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCCLNIX8m16BRDL68L6Pk-gZOduRPOyoU&callback=initMap"
       type="text/javascript">
     </script>
-
-    <footer>
+    <div class="botButtonContainer">
+      <a href="#top"><h2>Go back to top</h2></a>
+    </div>
+    <footer class="footer">
       <h3 id="contactTitle">Contact Us</h3>
       <div class="contactBlock">
-      <li class="contactinfo">
-        <ul>Tony Ou</ul>
-        <ul>tonyou1999@hotmail.com</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>William Zhang</ul>
-        <ul>W.YkZhang@hotmail.com</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>Victor Zhong</ul>
-        <ul>victor.zhong@mail.mcgill.ca</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>Michael Li</ul>
-        <ul>er.li@mail.mcgill.ca</ul>
-      </li>
+        <li class="contactinfo">
+          <ul>Tony Ou</ul>
+          <ul>tonyou1999@hotmail.com</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>William Zhang</ul>
+          <ul>W.YkZhang@hotmail.com</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>Victor Zhong</ul>
+          <ul>victor.zhong@mail.mcgill.ca</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>Michael Li</ul>
+          <ul>er.li@mail.mcgill.ca</ul>
+        </li>
       </div>
-
     </footer>
 
   </body>
