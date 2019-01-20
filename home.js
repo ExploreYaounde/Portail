@@ -376,164 +376,164 @@ function addMarker(location) {
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   var waypts = [];
   if($('#ritzCarlton').is(':checked')){
-      waypts.push({
-        location: {lat : 45.500, lng: -73.578},
-        stopover: true
+    waypts.push({
+      location: {lat : 45.500, lng: -73.578},
+      stopover: true
     });
   }
   if($('#leCrystal').is(':checked')){
-      waypts.push({
-        location: {lat:45.497, lng: -73.573},
-        stopover: true
+    waypts.push({
+      location: {lat:45.497, lng: -73.573},
+      stopover: true
     });
   }
   if($('#sofitelMontreal').is(':checked')){
-      waypts.push({
-        location: sofitelMontreal,
-        stopover: true
+    waypts.push({
+      location: sofitelMontreal,
+      stopover: true
     });
   }
   if($('#leSaintJames').is(':checked')){
-      waypts.push({
-        location: leSaintJames,
-        stopover: true
+    waypts.push({
+      location: leSaintJames,
+      stopover: true
     });
   }
   if($('#chateauVaudreuil').is(':checked')){
-      waypts.push({
-        location: chateauVaudreuil,
-        stopover: true
+    waypts.push({
+      location: chateauVaudreuil,
+      stopover: true
     });
   }
   if($('#mountStephen').is(':checked')){
-      waypts.push({
-        location: mountStephen,
-        stopover: true
+    waypts.push({
+      location: mountStephen,
+      stopover: true
     });
   }
   if($('#placeDarmes').is(':checked')){
-      waypts.push({
-        location: placeDarmes,
-        stopover: true
+    waypts.push({
+      location: placeDarmes,
+      stopover: true
     });
   }
   if($('#gardenInn').is(':checked')){
-      waypts.push({
-        location: gardenInn,
-        stopover: true
+    waypts.push({
+      location: gardenInn,
+      stopover: true
     });
   }
   if($('#leDauphin').is(':checked')){
-      waypts.push({
-        location: leDauphin,
-        stopover: true
+    waypts.push({
+      location: leDauphin,
+      stopover: true
     });
   }
   if($('#interContinental').is(':checked')){
-      waypts.push({
-        location: interContinental,
-        stopover: true
+    waypts.push({
+      location: interContinental,
+      stopover: true
     });
   }
   if($('#laRonde').is(':checked')){
-      waypts.push({
-        location: laRonde,
-        stopover: true
+    waypts.push({
+      location: laRonde,
+      stopover: true
     });
   }
   if($('#mountRoyal').is(':checked')){
-      waypts.push({
-        location: mountRoyal,
-        stopover: true
+    waypts.push({
+      location: mountRoyal,
+      stopover: true
     });
   }
   if($('#notreDame').is(':checked')){
-      waypts.push({
-        location: notreDame,
-        stopover: true
+    waypts.push({
+      location: notreDame,
+      stopover: true
     });
   }
   if($('#olympicStadium').is(':checked')){
-      waypts.push({
-        location: olympicStadium,
-        stopover: true
+    waypts.push({
+      location: olympicStadium,
+      stopover: true
     });
   }
   if($('#mountRoyalPark').is(':checked')){
-      waypts.push({
-        location: mountRoyalPark,
-        stopover: true
+    waypts.push({
+      location: mountRoyalPark,
+      stopover: true
     });
   }
   if($('#oldMontreal').is(':checked')){
-      waypts.push({
-        location: oldMontreal,
-        stopover: true
+    waypts.push({
+      location: oldMontreal,
+      stopover: true
     });
   }
   if($('#biosphereMuseum').is(':checked')){
-      waypts.push({
-        location: biosphereMuseum,
-        stopover: true
+    waypts.push({
+      location: biosphereMuseum,
+      stopover: true
     });
   }
   if($('#glowParty').is(':checked')){
-      waypts.push({
-        location: glowParty,
-        stopover: true
+    waypts.push({
+      location: glowParty,
+      stopover: true
     });
   }
   if($('#iglooFest').is(':checked')){
-      waypts.push({
-        location: iglooFest,
-        stopover: true
+    waypts.push({
+      location: iglooFest,
+      stopover: true
     });
   }
   if($('#fireworks').is(':checked')){
-      waypts.push({
-        location: fireworks,
-        stopover: true
+    waypts.push({
+      location: fireworks,
+      stopover: true
     });
   }
   if($('#lanZhou').is(':checked')){
-      waypts.push({
-        location: lanZhou,
-        stopover: true
+    waypts.push({
+      location: lanZhou,
+      stopover: true
     });
   }
   if($('#imperial').is(':checked')){
-      waypts.push({
-        location: imperial,
-        stopover: true
+    waypts.push({
+      location: imperial,
+      stopover: true
     });
   }
   if($('#deliceOriental').is(':checked')){
-      waypts.push({
-        location: deliceOriental,
-        stopover: true
+    waypts.push({
+      location: deliceOriental,
+      stopover: true
     });
   }
   if($('#laBanquise').is(':checked')){
-      waypts.push({
-        location: laBanquise,
-        stopover: true
+    waypts.push({
+      location: laBanquise,
+      stopover: true
     });
   }
   if($('#mooseBawr').is(':checked')){
-      waypts.push({
-        location: mooseBawr,
-        stopover: true
+    waypts.push({
+      location: mooseBawr,
+      stopover: true
     });
   }
   if($('#orangeJulep').is(':checked')){
-      waypts.push({
-        location: orangeJulep,
-        stopover: true
+    waypts.push({
+      location: orangeJulep,
+      stopover: true
     });
   }
 
 
-    directionsService.route({
+  directionsService.route({
     origin: "montreal,quebec",
     destination: "montreal, quebec",
     waypoints: waypts,
@@ -549,7 +549,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
       for (var i = 0; i < route.legs.length; i++) {
         var routeSegment = i + 1;
         summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
-            '</b><br>';
+        '</b><br>';
         summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
         summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
         summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
