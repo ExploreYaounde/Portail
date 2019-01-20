@@ -23,7 +23,6 @@
   <body>
 
     <header>
-      <div class="test">
       <nav>
         <ul>
             <li><a href="#Hotels"> Explore Montreal!</a></li>
@@ -34,11 +33,10 @@
             <li><a href="#contactTitle">About</a></li>
         </ul>
       </nav>
-      </div>
     </header>
 
-       <main>
-       <div class="homescreen">
+      <main>
+       <div class="homescreen" id="top">
         <p><span id="big">Welcome to Montreal</span></p>
         <p></p>
        </div>
@@ -155,45 +153,43 @@
           <span class="checkmark"></span>
         </label>
       </div>
-      <button id = "iterate">Create Itinerary!</button>
+      <div class="mainButtonContainer">
+        <button id = "iterate">Create Itinerary!</button>
+      </div>
     </main>
     <style>
-      #map {
-        height: 40vh;
-        width: 40%;
-      }
     </style>
     <div id="map"></div>
     <div id="right-panel">
     <div id="directions-panel"></div>
   </div>
     <script type="text/javascript" src="home.js"></script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCCLNIX8m16BRDL68L6Pk-gZOduRPOyoU&callback=initMap"
       type="text/javascript">
     </script>
-
-    <footer>
+    <div class="botButtonContainer">
+      <a href="#top"><h2>Go back to top</h2></a>
+    </div>
+    <footer class="footer">
       <h3 id="contactTitle">Contact Us</h3>
       <div class="contactBlock">
-      <li class="contactinfo">
-        <ul>Tony Ou</ul>
-        <ul>tonyou1999@hotmail.com</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>William Zhang</ul>
-        <ul>W.YkZhang@hotmail.com</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>Victor Zhong</ul>
-        <ul>victor.zhong@mail.mcgill.ca</ul>
-      </li>
-      <li class="contactinfo">
-        <ul>Michael Li</ul>
-        <ul>er.li@mail.mcgill.ca</ul>
-      </li>
+        <li class="contactinfo">
+          <ul>Tony Ou</ul>
+          <ul>tonyou1999@hotmail.com</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>William Zhang</ul>
+          <ul>W.YkZhang@hotmail.com</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>Victor Zhong</ul>
+          <ul>victor.zhong@mail.mcgill.ca</ul>
+        </li>
+        <li class="contactinfo">
+          <ul>Michael Li</ul>
+          <ul>er.li@mail.mcgill.ca</ul>
+        </li>
       </div>
-
     </footer>
 
   </body>
