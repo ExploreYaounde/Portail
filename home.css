@@ -28,13 +28,12 @@ span.about{
 	width: 100%;
 	margin: 0;
 	background-size: cover;
+	height:calc(100vh - 5em);
+	overflow:hidden;
+	line-height:calc(100vh - 5em);
+	text-align:center;
 }
 
-div.homescreen{
-  /* Fill whole vertical height, need JS to support mobile header*/
-  height:calc(100vh - 5em);
-  overflow:hidden;
-}
 .explore{
 	display:inline-block;
 	position:relative;
@@ -44,15 +43,11 @@ div.homescreen{
 	font-size:2em;
 	opacity:1;
 	background-color:black;
+	padding: 1%;
 }
 .explore:hover{
 	opacity:0.6;
 	background-color:black;
-}
-.homescreen p{
-  /*Puts both lines centered vertically in div*/
-  line-height:calc(100vh - 5em);
-  text-align:center;
 }
 
 #big{
@@ -99,7 +94,7 @@ li a:hover{
 
 footer{
 	position: relative;
-	height: 200px;
+	height: 230px;
 	bottom: 0;
   width: 100%;
 	padding-top: 2%;
