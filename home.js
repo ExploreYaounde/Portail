@@ -534,9 +534,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 
 
     directionsService.route({
-    origin: waypts[0],
-    destination: waypts[0],
-    waypoints: waypts[1:],
+    origin: "montreal,quebec",
+    destination: "montreal, quebec",
+    waypoints: waypts,
     optimizeWaypoints: true,
     travelMode: 'DRIVING'
   }, function(response, status) {
