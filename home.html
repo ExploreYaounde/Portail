@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Montreal</title>
+
     <link href="home.css" rel="stylesheet" type="text/css" />
     <!-- <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -63,13 +64,34 @@
           <input type="checkbox" name="resturants" value="choice3">Choice 3<br><span class="checkmark"></span>
         </div>
         <div class="Restaurants">Restaurants</div>
+<<<<<<< HEAD
         <div id="dropDownRestaurants" class="dropDown">
           <input type="checkbox" name="resturants" value="choice1">Choice 1<br><span class="checkmark"></span>
           <input type="checkbox" name="resturants" value="choice2">Choice 2<br><span class="checkmark"></span>
           <input type="checkbox" name="resturants" value="choice3">Choice 3<br><span class="checkmark"></span>
         </div>
       </div>
+=======
+        <div id="dropDownRestaurants">
+          <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
+          <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
+          <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
+    </div>
+>>>>>>> 7bc282e9d13cf51bc82e3b08238225db7899d9aa
     </main>
+
+    <style>
+      #map {
+        height: 700px;
+        width: 50%;
+      }
+    </style>
+    <div id="map"></div>
+    <script type="text/javascript" src="home.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlgFE88zLZjibX_uz2evLZtect3hWk0Gw&callback=initMap"
+      type="text/javascript">
+    </script>
 
     <footer>
       <h3 id="contactTitle">Contact Us</h3>
@@ -93,6 +115,7 @@
       </div>
 
     </footer>
+
   </body>
 
 </html>
