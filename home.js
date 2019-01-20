@@ -12,10 +12,25 @@
 
 
 // $(document).ready(function(){
-//
-//   $('.button').click(function(){
-//     $(this).next().show();
+//   $("button").click(function(){
+//     $(".explore").toggle());
 //   });
-//
-//
 // });
+
+$(function() {
+    $(".Hotels" ).click(function() {
+        $("#dropDownHotels").toggle();
+    });
+
+    $(".Attractions" ).click(function() {
+        $("#dropDownAttractions").toggle();
+    });
+
+    $(".Events" ).click(function() {
+        $("#dropDownEvents").toggle();
+    });
+
+    $(".Restaurants" ).click(function() {
+        $("#dropDownRestaurants").toggle();
+    });
+});
