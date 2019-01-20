@@ -9,11 +9,18 @@
     <title>Explore Montreal</title>
 
     <link href="home.css" rel="stylesheet" type="text/css" />
-    <script
+    <!-- <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+<<<<<<< HEAD
   crossorigin="anonymous"></script>
 
+=======
+  crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+    <script type="text/javascript" src="home.js"></script>
+>>>>>>> 17638eb01decef7e6eeabaec20dbf3cb1e802a7b
   </head>
 
   <body>
@@ -23,10 +30,11 @@
       <nav>
         <ul>
             <li><a href=""> Explore Montreal</a></li>
-            <li><a href=""> Category 1 </a></li>
-            <li><a href=""> Category 2 </a></li>
-            <li><a href=""> Category 3 </a></li>
-            <li><a href=""> About </a></li>
+            <li><a href="" class="Hotels">Hotels</a></li>
+            <li><a href="" class="Attractions">Attractions</a></li>
+            <li><a href="" class="Events">Events</a></li>
+            <li><a href="" class="Restaurants">Restaurants</a></li>
+            <li><a href="">About</a></li>
         </ul>
       </nav>
       </div>
@@ -34,7 +42,7 @@
 
     <main>
       <div class="homescreen">
-        <p><span id="big">Welcome to Montreal!</span></p>
+        <p><span id="big">Welcome to Montreal</span></p>
         <p></p>
       </div>
       <div class="explore">
@@ -42,39 +50,30 @@
       </div>
 
       <div class="categories">
-        <div class="dropdown">
-          <button class="button">Hotels</button>
-          <div class="dropdownContent">
-            <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
-            <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
-            <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
-          </div>
+        <div class="Hotels">Hotels</div>
+        <div id="dropDownHotels">
+          <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
+          <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
+          <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
         </div>
-        <div class="dropdown">
-          <button class="button">Attractions</button>
-          <div class="dropdownContent">
-            <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
-            <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
-            <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
-          </div>
+        <div class="Attractions">Attractions</div>
+        <div id="dropDownAttractions">
+          <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
+          <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
+          <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
         </div>
-        <div class="dropdown">
-          <button class="button">Events</button>
-          <div class="dropdownContent">
-            <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
-            <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
-            <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
-          </div>
+        <div class="Events">Events</div>
+        <div id="dropDownEvents">
+          <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
+          <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
+          <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
         </div>
-        <div class="dropdown">
-          <button class="button">Restaurants</button>
-          <div class="dropdownContent">
-            <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
-            <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
-            <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
-          </div>
-        </div>
-      </div>
+        <div class="Restaurants">Restaurants</div>
+        <div id="dropDownRestaurants">
+          <input type="checkbox" name="resturants" value="choice1">Choice 1<br>
+          <input type="checkbox" name="resturants" value="choice2">Choice 2<br>
+          <input type="checkbox" name="resturants" value="choice3">Choice 3<br>
+    </div>
     </main>
 
     <style>
