@@ -227,6 +227,9 @@ h2{
 	border-style: solid;
 }
 
+<<<<<<< HEAD
+
+=======
 h2:hover{
 	background-color: black;
 	color: white;
@@ -254,3 +257,4 @@ h2:hover{
 	color: white;
 	cursor: pointer;
 }
+>>>>>>> e762740c0f6c36a664fa6bdb06160c6036f77408
