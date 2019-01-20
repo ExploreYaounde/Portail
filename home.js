@@ -19,38 +19,39 @@
 
 
 
-$(function() {
-    $(".Hotels" ).click(function() {
-        $("#dropDownHotels").toggle();
-    });
-
-    $(".Attractions" ).click(function() {
-        $("#dropDownAttractions").toggle();
-    });
-
-    $(".Events" ).click(function() {
-        $("#dropDownEvents").toggle();
-    });
-
-    $(".Restaurants" ).click(function() {
-        $("#dropDownRestaurants").toggle();
-    });
-});
+// $(function() {
+//     $(".Hotels" ).click(function() {
+//         $("#dropDownHotels").toggle();
+//     });
+//
+//     $(".Attractions" ).click(function() {
+//         $("#dropDownAttractions").toggle();
+//     });
+//
+//     $(".Events" ).click(function() {
+//         $("#dropDownEvents").toggle();
+//     });
+//
+//     $(".Restaurants" ).click(function() {
+//         $("#dropDownRestaurants").toggle();
+//     });
+//
+// });
 
 var markers = [];
-var map;
+//var map;
 
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
 
-  var geocoder = new google.maps.Geocoder;
-  var infowindow = new google.maps.InfoWindow;
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {lat: 45.4857, lng:-73.5957}
   });
+  directionsDisplay.setMap(map);
+
   var ritzCarlton = {lat : 45.500, lng: -73.578};
   addMarker(ritzCarlton);
   var leCrystal = {lat:45.497, lng: -73.573};
@@ -83,39 +84,41 @@ function initMap() {
   var laRonde = {lat:45.522, lng:-73.5346};
   addMarker(laRonde);
   var mountRoyal = {lat:45.5071, lng:-73.5874};
-  add(mountRoyal);
+  addMarker(mountRoyal);
   var notreDame = {lat:45.5045, lng:-73.556};
-  add(notreDame);
+  addMarker(notreDame);
   var olympicStadium = {lat:45.558, lng:-73.5519};
-  add(olympicStadium);
+  addMarker(olympicStadium);
   var mountRoyalPark = {lat:45.505, lng:-73.5878};
-  add(mountRoyalPark);
+  addMarker(mountRoyalPark);
   var oldMontreal = {lat:45.5075, lng:-73.5544};
-  add(oldMontreal);
+  addMarker(oldMontreal);
   var biosphereMuseum = {lat:45.5139, lng:-73.5314};
-  add(biosphereMuseum);
-  var glowParty = {lat:45.4773, lng:-73..5927};
-  add(glowParty);
+  addMarker(biosphereMuseum);
+  var glowParty = {lat:45.4773, lng:-73.5927};
+  addMarker(glowParty);
   var iglooFest = {lat:45.5074, lng:-73.548};
-  add(iglooFest);
+  addMarker(iglooFest);
   var fireworks = {lat:45.5043, lng:-73.5496};
-  add(fireworks);
+  addMarker(fireworks);
   var lanZhou = {lat:45.5078, lng:-73.5596};
-  add(lanZhou);
+  addMarker(lanZhou);
   var imperial = {lat:45.5076, lng:-73.5594};
-  add(imperial);
+  addMarker(imperial);
   var deliceOriental = {lat:45.4929, lng:-73.5801};
-  add(deliceOriental);
+  addMarker(deliceOriental);
   var laBanquise = {lat:45.5253, lng:-73.575};
-  add(laBanquise);
+  addMarker(laBanquise);
   var mooseBawr = {lat:45.4936, lng:-73.5797};
-  add(mooseBawr);
+  addMarker(mooseBawr);
   var orangeJulep = {lat:45.4957, lng: -73.6567};
-  add(orangeJulep);
+  addMarker(orangeJulep);
 
 
-  $('#ritz').change(function() {
+
+  $('#ritzCarlton').change(function() {
     if(this.checked) {
+      alert("pushed");
       markers[0].setMap(map);
     }
     else{
@@ -194,6 +197,144 @@ function initMap() {
       markers[9].setMap(null);
     }
   });
+  $('#laRonde').change(function() {
+    if(this.checked) {
+      markers[10].setMap(map);
+    }
+    else{
+      markers[10].setMap(null);
+    }
+  });
+  $('#mountRoyal').change(function() {
+    if(this.checked) {
+      markers[11].setMap(map);
+    }
+    else{
+      markers[11].setMap(null);
+    }
+  });
+  $('#notreDame').change(function() {
+    if(this.checked) {
+      markers[12].setMap(map);
+    }
+    else{
+      markers[12].setMap(null);
+    }
+  });
+  $('#olympicStadium').change(function() {
+    if(this.checked) {
+      markers[13].setMap(map);
+    }
+    else{
+      markers[13].setMap(null);
+    }
+  });
+  $('#mountRoyalPark').change(function() {
+    if(this.checked) {
+      markers[14].setMap(map);
+    }
+    else{
+      markers[14].setMap(null);
+    }
+  });
+  $('#oldMontreal').change(function() {
+    if(this.checked) {
+      markers[15].setMap(map);
+    }
+    else{
+      markers[15].setMap(null);
+    }
+  });
+  $('#biosphereMuseum').change(function() {
+    if(this.checked) {
+      markers[16].setMap(map);
+    }
+    else{
+      markers[16].setMap(null);
+    }
+  });
+  $('#glowParty').change(function() {
+    if(this.checked) {
+      markers[17].setMap(map);
+    }
+    else{
+      markers[17].setMap(null);
+    }
+  });
+  $('#iglooFest').change(function() {
+    if(this.checked) {
+      markers[18].setMap(map);
+    }
+    else{
+      markers[18].setMap(null);
+    }
+  });
+  $('#fireworks').change(function() {
+    if(this.checked) {
+      markers[19].setMap(map);
+    }
+    else{
+      markers[19].setMap(null);
+    }
+  });
+  $('#lanZhou').change(function() {
+    if(this.checked) {
+      markers[20].setMap(map);
+    }
+    else{
+      markers[20].setMap(null);
+    }
+  });
+  $('#imperial').change(function() {
+    if(this.checked) {
+      markers[21].setMap(map);
+    }
+    else{
+      markers[21].setMap(null);
+    }
+  });
+  $('#deliceOriental').change(function() {
+    if(this.checked) {
+      markers[22].setMap(map);
+    }
+    else{
+      markers[22].setMap(null);
+    }
+  });
+  $('#laBanquise').change(function() {
+    if(this.checked) {
+      markers[23].setMap(map);
+    }
+    else{
+      markers[23].setMap(null);
+    }
+  });
+  $('#mooseBawr').change(function() {
+    if(this.checked) {
+      markers[24].setMap(map);
+    }
+    else{
+      markers[24].setMap(null);
+    }
+  });
+  $('#orangeJulep').change(function() {
+    if(this.checked) {
+      markers[25].setMap(map);
+      alert(markers[25].getPosition());
+    }
+    else{
+      markers[25].setMap(null);
+    }
+  });
+
+  //
+  $("#iterate").click(function() {
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  });
+  // document.getElementById('submit').addEventListener('click', function() {
+  //   calculateAndDisplayRoute(directionsService, directionsDisplay);
+  // });
+
 }
 
 function addMarker(location) {
@@ -203,65 +344,123 @@ function addMarker(location) {
   });
   markers.push(marker);
 }
-  //directionsDisplay.setMap(map);
-// function calculateAndDisplayRoute(directionsService, directionsDisplay) {
-//   var waypts = [];
-//   var checkboxArray = document.getElementById('waypoints');
-//   for (var i = 0; i < checkboxArray.length; i++) {
-//     if (checkboxArray.options[i].selected) {
-//       waypts.push({
-//         location: checkboxArray[i].value,
-//         stopover: true
-//       });
-//     }
-//   }
-// }
-  function geocodePlaceId(geocoder, map, infowindow) {
-    var placeId = document.getElementById('cb').value;
-    geocoder.geocode({'placeId': placeId}, function(results, status) {
-      if (status === 'OK') {
-        if (results[0]) {
-          map.setZoom(11);
-          map.setCenter(results[0].geometry.location);
-          var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location
-          });
-          infowindow.setContent(results[0].formatted_address);
-          infowindow.open(map, marker);
-        } else {
-          window.alert('No results found');
-        }
-      } else {
-        window.alert('Geocoder failed due to: ' + status);
+
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+  var waypts = [];
+  $('input[type="checkbox"]').click(function(){
+    if($(#ritzCarlton).prop("checked") == true){
+      waypts.push({
+        location: ritzCarlton;,
+        stopover: true
+      });
+    }
+    if($(#leCrystal).prop("checked") == true){
+      waypts.push({
+        location: leCrystal;,
+        stopover: true
+      });
+    }
+    if($(#sofitelMontreal).prop("checked") == true){
+      waypts.push({
+        location: sofitelMontreal;,
+        stopover: true
+      });
+    }
+    if($(#leSaintJames).prop("checked") == true){
+      waypts.push({
+        location: leSaintJames;,
+        stopover: true
+      });
+    }
+    if($(#chateauVaudreuil).prop("checked") == true){
+      waypts.push({
+        location: chateauVaudreuil;,
+        stopover: true
+      });
+    }
+    if($(#mountStephen).prop("checked") == true){
+      waypts.push({
+        location: mountStephen;,
+        stopover: true
+      });
+    }
+    if($(#placeDarmes).prop("checked") == true){
+      waypts.push({
+        location: placeDarmes;,
+        stopover: true
+      });
+    }
+    if($(#gardenInn).prop("checked") == true){
+      waypts.push({
+        location: gardenInn;,
+        stopover: true
+      });
+    }
+    if($(#leDauphin).prop("checked") == true){
+      waypts.push({
+        location: leDauphin;,
+        stopover: true
+      });
+    }
+    if($(#interContinental).prop("checked") == true){
+      waypts.push({
+        location: interContinental;,
+        stopover: true
+      });
+    }
+    if($(#laRonde).prop("checked") == true){
+      waypts.push({
+        location: laRonde;,
+        stopover: true
+      });
+    }
+    if($(#mountRoyal).prop("checked") == true){
+      waypts.push({
+        location: mountRoyal;,
+        stopover: true
+      });
+    }
+    if($(#notreDame).prop("checked") == true){
+      waypts.push({
+        location: notreDame;,
+        stopover: true
+      });
+    }
+    if($(#olympicStadium).prop("checked") == true){
+      waypts.push({
+        location: olympicStadium;,
+        stopover: true
+      });
+    }
+  });
+
+
+    directionsService.route({
+    origin: "montreal,quebec",
+    destination: "montreal, quebec",
+    waypoints: waypts,
+    optimizeWaypoints: true,
+    travelMode: 'DRIVING'
+  }, function(response, status) {
+    if (status === 'OK') {
+      directionsDisplay.setDirections(response);
+      var route = response.routes[0];
+      var summaryPanel = document.getElementById('directions-panel');
+      summaryPanel.innerHTML = '';
+      // For each route, display summary information.
+      for (var i = 0; i < route.legs.length; i++) {
+        var routeSegment = i + 1;
+        summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
+            '</b><br>';
+        summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
+        summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+        summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
       }
-    });
-  }
-  // directionsService.route({
-  //   origin: document.getElementById('start').value,
-  //   destination: document.getElementById('end').value,
-  //   waypoints: waypts,
-  //   optimizeWaypoints: true,
-  //   travelMode: 'DRIVING'
-  // }, function(response, status) {
-  //   if (status === 'OK') {
-  //     directionsDisplay.setDirections(response);
-  //     var route = response.routes[0];
-  //     var summaryPanel = document.getElementById('directions-panel');
-  //     summaryPanel.innerHTML = '';
-  //     // For each route, display summary information.
-  //     for (var i = 0; i < route.legs.length; i++) {
-  //       var routeSegment = i + 1;
-  //       summaryPanel.innerHTML += '<b>Route Segment: ' + routeSegment +
-  //           '</b><br>';
-  //       summaryPanel.innerHTML += route.legs[i].start_address + ' to ';
-  //       summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
-  //       summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
-  //     }
-  //   } else {
-  //     window.alert('Directions request failed due to ' + status);
-  //   }
-  // });
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
 
 
 
@@ -272,10 +471,7 @@ function addMarker(location) {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 9662cadee3e121242ded97255582e23713c2089d
 // function initMap() {
 //   // Map options
 //   var options = {
@@ -310,28 +506,8 @@ function addMarker(location) {
 //       // icon:
 //     });
 //   }
-<<<<<<< HEAD
-
-  // Listen for click on map
-  google.maps.event.addListener(map, 'click', function(event) {
-    // Add marker
-    addMarker(event.latLng);
-  });
-  var myLatLong = event.latLng;
-  addMarker({lat: 45.4857, lng:-73.5957});
-
-  // Add marker function
-  function addMarker(coords) {
-    var marker = new google.maps.Marker({
-      position: coords,
-      map: map,
-      // icon:
-    });
-}
 
 
-=======
->>>>>>> 9662cadee3e121242ded97255582e23713c2089d
 //
 //   document.getElementById('submit').addEventListener('click', function() {
 //     calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -378,8 +554,6 @@ function addMarker(location) {
 //
 // }
 
-<<<<<<< HEAD
-=======
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -394,4 +568,3 @@ for (i = 0; i < acc.length; i++) {
     }
   };
 }
->>>>>>> 9662cadee3e121242ded97255582e23713c2089d

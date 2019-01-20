@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
     <script type="text/javascript" src="home.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
 
   </head>
 
@@ -45,13 +45,16 @@
        <div class="explore">
         <a href="#Hotels">Explore now!</a>
        </div>
+       <section class="xop-container">
+         <div class="xop-left">
+           <article>
         <div class="categories">
         <div class="category" id="Hotels">Hotels</div>
-        <label class="container"> Ritz-Carlton Hotel
-          <input type="checkbox">       
+        <label for="ritzCarlton" class="container"> Ritz-Carlton Hotel
+          <input id="ritzCarlton" type="checkbox">
           <span class="checkmark"></span>
-        </label>  
-        <label class="container">Hôtel Le Crystal
+        </label>
+        <label for="leCrystal" class="container">Hôtel Le Crystal
           <input id="leCrystal" type="checkbox">
           <span class="checkmark"></span>
         </label>
@@ -68,7 +71,7 @@
           <span class="checkmark"></span>
         </label>
         <label for="mountStephen" class="container">Le Mount Stephen
-          <input id="mountStephen" type="checkbox">         
+          <input id="mountStephen" type="checkbox">
           <span class="checkmark"></span>
         </label>
         <label for="placeDarmes" class="container">Hotel Place d'Armes
@@ -88,83 +91,91 @@
           <span class="checkmark"></span>
         </label>
         <div class="category" id="Attractions">Attractions</div>
-        <label class="container">La Ronde
-          <input type="checkbox">
+        <label for="laRonde" class="container">La Ronde
+          <input id="laRonde" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Mount Royal
-          <input type="checkbox">
+        <label for="mountRoyal" class="container">Mount Royal
+          <input id="mountRoyal" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Notre-Dame Basilica of Montreal
-          <input type="checkbox">
+        <label for = "notreDame" class="container">Notre-Dame Basilica of Montreal
+          <input id="notreDame" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Olympic Stadium
-          <input type="checkbox">
+        <label for="olympicStadium" class="container">Olympic Stadium
+          <input id="olympicStadium" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Mount Royal Park
-          <input type="checkbox">
+        <label for = "mountRoyalPark" class="container">Mount Royal Park
+          <input id="mountRoyalPark" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Old Montreal
-          <input type="checkbox">
+        <label for = "oldMontreal" class="container">Old Montreal
+          <input id= "oldMontreal" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Biosphere Environmental Museum
-          <input type="checkbox">
+        <label for = "biosphereMuseum" class="container">Biosphere Environmental Museum
+          <input id= "biosphereMuseum" type="checkbox">
           <span class="checkmark"></span>
         </label>
         <div class="category" id="Events">Events</div>
-        <label class="container">Montreal Glow Party 2019
-          <input type="checkbox">
+        <label for = "glowParty" class="container">Montreal Glow Party 2019
+          <input id="glowParty" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">IglooFest 2019
-          <input type="checkbox">
+        <label for = "iglooFest" class="container">IglooFest 2019
+          <input id= "iglooFest" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Old Port Fireworks
-          <input type="checkbox">
+        <label for = "fireworks" class="container">Old Port Fireworks
+          <input id="fireworks" type="checkbox">
           <span class="checkmark"></span>
         </label>
         <div class="category" id="Restaurants">Restaurants</div>
-        <label class="container">Nouilles de Lan Zhou
-          <input type="checkbox">
+        <label for = "lanZhou" class="container">Nouilles de Lan Zhou
+          <input id = "lanZhou" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Restaurant Impérial
-          <input type="checkbox">
+        <label for = "imperial" class="container">Restaurant Impérial
+          <input id= "imperial" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">Délice oriental
-          <input type="checkbox">
+        <label for = "deliceOriental" class="container">Délice oriental
+          <input id= "deliceOriental" type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <label class="container">La Banquise
-          <input type="checkbox">
+        <label for ="laBanquise" class="container">La Banquise
+          <input id="laBanquise" type="checkbox">
           <span class="checkmark"></span>
         </label>
-         <label class="container">Moose Bawr
-          <input type="checkbox">
+         <label for="mooseBawr" class="container">Moose Bawr
+          <input id="mooseBawr" type="checkbox">
           <span class="checkmark"></span>
         </label>
-         <label class="container">Orange Julep
-          <input type="checkbox">
+         <label for="orangeJulep" class="container">Orange Julep
+          <input id="orangeJulep" type="checkbox">
           <span class="checkmark"></span>
         </label>
       </div>
+      <button id = "iterate">Create Iternerary!</button>
     </main>
-
-
+  </article>
+</div>
+<div class="xop-right">
+  <article>
     <style>
       #map {
-        height: 700px;
-        width: 50%;
+        height: 40vh;
+        width: 40%;
       }
     </style>
     <div id="map"></div>
+    <div id="directions-panel"></div>
+
+  </article>
+</div>
+</section>
     <script type="text/javascript" src="home.js"></script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCCLNIX8m16BRDL68L6Pk-gZOduRPOyoU&callback=initMap"
