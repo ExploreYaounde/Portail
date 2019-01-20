@@ -16,6 +16,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
     <script type="text/javascript" src="home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
   </head>
 
   <body>
@@ -24,12 +26,12 @@
       <div class="test">
       <nav>
         <ul>
-            <li><a href=""> Explore Montreal</a></li>
-            <li><a href="" class="Hotels">Hotels</a></li>
-            <li><a href="" class="Attractions">Attractions</a></li>
-            <li><a href="" class="Events">Events</a></li>
-            <li><a href="" class="Restaurants">Restaurants</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#Hotels"> Explore Montreal!</a></li>
+            <li><a href="#Hotels" class="Hotels" >Hotels</a></li>
+            <li><a href="#Attractions" class="Attractions">Attractions</a></li>
+            <li><a href="#Events" class="Events">Events</a></li>
+            <li><a href="#Restaurants" class="Restaurants">Restaurants</a></li>
+            <li><a href="#contactTitle">About</a></li>
         </ul>
       </nav>
       </div>
@@ -40,6 +42,7 @@
         <p><span id="big">Welcome to Montreal</span></p>
         <p></p>
       </div>
+<<<<<<< HEAD
       <div class="explore">
         <a href=#>Explore now!</a>
       </div>
@@ -51,12 +54,45 @@
         </label>
         <label for="leCrystal" class="container">Hôtel Le Crystal
           <input id="leCrystal" type="checkbox">
+=======
+       <div class="explore">
+        <a href="#Hotels">Explore now!</a>
+      </div> 
+    <!--   <div class="explore">
+        <button type="button">Explore now!</button></div> -->
+        <div class="categories">
+
+        <div class="category" id="Hotels">Hotels</div>
+        <label class="container"> Ritz-Carlton Hotel
+          <input type="checkbox">       
           <span class="checkmark"></span>
+          </label>
+          <button class="accordion">Section 1</button>
+          <input type="checkbox">
+>>>>>>> 0d77a9d677dfa990b61996f1bab06b83ff3e1230
+          <span class="checkmark"></span>
+  <div class="panel">
+
+    <p>Lorem ipsum...</p>
+  </div>
+
+  <button class="accordion">Section 2</button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+
+  <button class="accordion">Section 3</button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+        <label class="container">Hôtel Le Crystal
+          
         </label>
         <label for="sofitelMontreal"class="container">Sofitel Montréal Le Carré Doré
           <input id="sofitelMontreal" type="checkbox">
           <span class="checkmark"></span>
         </label>
+<<<<<<< HEAD
         <label for="leSaintJames" class="container">Hotel Le St-James
           <input id="leSaintJames" type="checkbox">
           <span class="checkmark"></span>
@@ -67,12 +103,17 @@
         </label>
         <label for="mountStephen" class="container">Le Mount Stephen
           <input id="mountStephen" type="checkbox">
+=======
+        <label class="container">Le Mount Stephen
+          <input type="checkbox">
+>>>>>>> 0d77a9d677dfa990b61996f1bab06b83ff3e1230
           <span class="checkmark"></span>
         </label>
         <label for="placeDarmes" class="container">Hotel Place d'Armes
           <input id="placeDarmes" type="checkbox">
           <span class="checkmark"></span>
         </label>
+<<<<<<< HEAD
         <label for="gardenInn" class="container">Hilton Garden Inn Montreal Centre-ville
           <input id="gardenInn" type="checkbox">
           <span class="checkmark"></span>
@@ -83,9 +124,13 @@
         </label>
         <label for="interContinental" class="container">InterContinental Montreal
           <input id="interContinental" type="checkbox">
+=======
+        <label class="container">InterContinental Montreal
+          <input type="checkbox">
+>>>>>>> 0d77a9d677dfa990b61996f1bab06b83ff3e1230
           <span class="checkmark"></span>
         </label>
-        <div class="category">Attractions</div>
+        <div class="category" id="Attractions">Attractions</div>
         <label class="container">La Ronde
           <input type="checkbox">
           <span class="checkmark"></span>
@@ -114,7 +159,7 @@
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <div class="category">Events</div>
+        <div class="category" id="Events">Events</div>
         <label class="container">Montreal Glow Party 2019
           <span class="checkmark"></span>
         </label>
@@ -126,7 +171,7 @@
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
-        <div class="category">Restaurants</div>
+        <div class="category" id="Restaurants">Restaurants</div>
         <label class="container">Nouilles de Lan Zhou
           <input type="checkbox">
           <span class="checkmark"></span>
