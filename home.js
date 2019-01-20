@@ -66,6 +66,7 @@ var deliceOriental;
 var laBanquise;
 var mooseBawr;
 var orangeJulep;
+var hotel;
 
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
@@ -144,6 +145,8 @@ function initMap() {
   $('#ritzCarlton').change(function() {
     if(this.checked) {
       markers[0].setMap(map);
+      hotel = ritzCarlton;
+      hotelcount ++;
     }
     else{
       markers[0].setMap(null);
@@ -152,6 +155,8 @@ function initMap() {
   $('#leCrystal').change(function() {
     if(this.checked) {
       markers[1].setMap(map);
+      hotel = leCrystal;
+      hotelcount ++;
     }
     else{
       markers[1].setMap(null);
@@ -160,6 +165,7 @@ function initMap() {
   $('#sofitelMontreal').change(function() {
     if(this.checked) {
       markers[2].setMap(map);
+      hotel = sofitelMontreal;
     }
     else{
       markers[2].setMap(null);
@@ -168,6 +174,7 @@ function initMap() {
   $('#leSaintJames').change(function() {
     if(this.checked) {
       markers[3].setMap(map);
+      hotel = leSaintJames;
     }
     else{
       markers[3].setMap(null);
@@ -176,6 +183,7 @@ function initMap() {
   $('#chateauVaudreuil').change(function() {
     if(this.checked) {
       markers[4].setMap(map);
+      hotel = chateauVaudreuil;
     }
     else{
       markers[4].setMap(null);
@@ -184,6 +192,7 @@ function initMap() {
   $('#mountStephen').change(function() {
     if(this.checked) {
       markers[5].setMap(map);
+      hotel = mountStephen;
     }
     else{
       markers[5].setMap(null);
@@ -192,6 +201,8 @@ function initMap() {
   $('#placeDarmes').change(function() {
     if(this.checked) {
       markers[6].setMap(map);
+      hotel = placeDarmes;
+      hotelcount ++;
     }
     else{
       markers[6].setMap(null);
@@ -200,6 +211,7 @@ function initMap() {
   $('#gardenInn').change(function() {
     if(this.checked) {
       markers[7].setMap(map);
+      hotel = gardenInn;
     }
     else{
       markers[7].setMap(null);
@@ -208,6 +220,7 @@ function initMap() {
   $('#leDauphin').change(function() {
     if(this.checked) {
       markers[8].setMap(map);
+      hotel = leDauphin;
     }
     else{
       markers[8].setMap(null);
@@ -216,6 +229,7 @@ function initMap() {
   $('#interContinental').change(function() {
     if(this.checked) {
       markers[9].setMap(map);
+      hotel = interContinental;
     }
     else{
       markers[9].setMap(null);
@@ -344,7 +358,6 @@ function initMap() {
   $('#orangeJulep').change(function() {
     if(this.checked) {
       markers[25].setMap(map);
-      alert(markers[25].getPosition());
     }
     else{
       markers[25].setMap(null);
@@ -532,10 +545,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     });
   }
 
-
     directionsService.route({
-    origin: "montreal,quebec",
-    destination: "montreal, quebec",
+    origin: hotel,
+    destination: hotel,
     waypoints: waypts,
     optimizeWaypoints: true,
     travelMode: 'DRIVING'
