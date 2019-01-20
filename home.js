@@ -240,7 +240,7 @@ function addMarker(location) {
 
 
 
-<<<<<<< HEAD
+
 // function initMap() {
 //   // Map options
 //   var options = {
@@ -275,7 +275,7 @@ function addMarker(location) {
 //       // icon:
 //     });
 //   }
-=======
+
   // Listen for click on map
   google.maps.event.addListener(map, 'click', function(event) {
     // Add marker
@@ -291,9 +291,9 @@ function addMarker(location) {
       map: map,
       // icon:
     });
-  }
 }
->>>>>>> 0d77a9d677dfa990b61996f1bab06b83ff3e1230
+
+
 //
 //   document.getElementById('submit').addEventListener('click', function() {
 //     calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -339,19 +339,4 @@ function addMarker(location) {
 //   }
 //
 // }
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  };
-}
 
