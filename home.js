@@ -39,7 +39,33 @@
 // });
 
 var markers = [];
-//var map;
+var map;
+var ritzCarlton;
+var leCrystal;
+var sofitelMontreal;
+var leSaintJames;
+var chateauVaudreuil;
+var mountStephen;
+var placeDarmes;
+var gardenInn;
+var leDauphin;
+var interContinental;
+var laRonde;
+var mountRoyal;
+var notreDame;
+var olympicStadium;
+var mountRoyalPark;
+var oldMontreal;
+var biosphereMuseum;
+var glowParty;
+var iglooFest;
+var fireworks;
+var lanZhou;
+var imperial;
+var deliceOriental;
+var laBanquise;
+var mooseBawr;
+var orangeJulep;
 
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
@@ -52,66 +78,66 @@ function initMap() {
   });
   directionsDisplay.setMap(map);
 
-  var ritzCarlton = {lat : 45.500, lng: -73.578};
+  ritzCarlton = {lat : 45.500, lng: -73.578};
   addMarker(ritzCarlton);
-  var leCrystal = {lat:45.497, lng: -73.573};
+  leCrystal = {lat:45.497, lng: -73.573};
   addMarker(leCrystal);
-  var sofitelMontreal = {lat:45.5015, lng:-73.5774};
+  sofitelMontreal = {lat:45.5015, lng:-73.5774};
   addMarker(sofitelMontreal);
   // markers[2].push(marker);
-  var leSaintJames = {lat:45.5027, lng:-73.5596};
+  leSaintJames = {lat:45.5027, lng:-73.5596};
   addMarker(leSaintJames);
   // markers[3].push(marker);
-  var chateauVaudreuil = {lat:45.4161, lng:-74.0119};
+  chateauVaudreuil = {lat:45.4161, lng:-74.0119};
   addMarker(chateauVaudreuil);
   // markers[4].push(marker);
-  var mountStephen = {lat:45.4991, lng:-73.5758};
+  mountStephen = {lat:45.4991, lng:-73.5758};
   addMarker(mountStephen);
   // markers[5].push(marker);
-  var placeDarmes = {lat:45.5054, lng:-73.5574};
+  placeDarmes = {lat:45.5054, lng:-73.5574};
   addMarker(placeDarmes);
   // markers[6].push(marker);
-  var gardenInn = {lat:45.5076, lng:-73.5714};
+  gardenInn = {lat:45.5076, lng:-73.5714};
   addMarker(gardenInn);
   // markers[7].push(marker);
-  var leDauphin = {lat:45.5043, lng:-73.5622};
+  leDauphin = {lat:45.5043, lng:-73.5622};
   addMarker(leDauphin);
   // markers[8].push(marker);
-  var interContinental = {lat:45.5029, lng:-73.5604};
+  interContinental = {lat:45.5029, lng:-73.5604};
   addMarker(interContinental);
   // markers[9].push(marker);
   // setMapOnAll(null);
-  var laRonde = {lat:45.522, lng:-73.5346};
+  laRonde = {lat:45.522, lng:-73.5346};
   addMarker(laRonde);
-  var mountRoyal = {lat:45.5071, lng:-73.5874};
+  mountRoyal = {lat:45.5071, lng:-73.5874};
   addMarker(mountRoyal);
-  var notreDame = {lat:45.5045, lng:-73.556};
+  notreDame = {lat:45.5045, lng:-73.556};
   addMarker(notreDame);
-  var olympicStadium = {lat:45.558, lng:-73.5519};
+  olympicStadium = {lat:45.558, lng:-73.5519};
   addMarker(olympicStadium);
-  var mountRoyalPark = {lat:45.505, lng:-73.5878};
+  mountRoyalPark = {lat:45.505, lng:-73.5878};
   addMarker(mountRoyalPark);
-  var oldMontreal = {lat:45.5075, lng:-73.5544};
+  oldMontreal = {lat:45.5075, lng:-73.5544};
   addMarker(oldMontreal);
-  var biosphereMuseum = {lat:45.5139, lng:-73.5314};
+  biosphereMuseum = {lat:45.5139, lng:-73.5314};
   addMarker(biosphereMuseum);
-  var glowParty = {lat:45.4773, lng:-73.5927};
+  glowParty = {lat:45.4773, lng:-73.5927};
   addMarker(glowParty);
-  var iglooFest = {lat:45.5074, lng:-73.548};
+  iglooFest = {lat:45.5074, lng:-73.548};
   addMarker(iglooFest);
-  var fireworks = {lat:45.5043, lng:-73.5496};
+  fireworks = {lat:45.5043, lng:-73.5496};
   addMarker(fireworks);
-  var lanZhou = {lat:45.5078, lng:-73.5596};
+  lanZhou = {lat:45.5078, lng:-73.5596};
   addMarker(lanZhou);
-  var imperial = {lat:45.5076, lng:-73.5594};
+  imperial = {lat:45.5076, lng:-73.5594};
   addMarker(imperial);
-  var deliceOriental = {lat:45.4929, lng:-73.5801};
+  deliceOriental = {lat:45.4929, lng:-73.5801};
   addMarker(deliceOriental);
-  var laBanquise = {lat:45.5253, lng:-73.575};
+  laBanquise = {lat:45.5253, lng:-73.575};
   addMarker(laBanquise);
-  var mooseBawr = {lat:45.4936, lng:-73.5797};
+  mooseBawr = {lat:45.4936, lng:-73.5797};
   addMarker(mooseBawr);
-  var orangeJulep = {lat:45.4957, lng: -73.6567};
+  orangeJulep = {lat:45.4957, lng: -73.6567};
   addMarker(orangeJulep);
 
 
@@ -328,9 +354,12 @@ function initMap() {
   });
 
   //
+
   $("#iterate").click(function() {
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   });
+
+
   // document.getElementById('submit').addEventListener('click', function() {
   //   calculateAndDisplayRoute(directionsService, directionsDisplay);
   // });
@@ -344,97 +373,113 @@ function addMarker(location) {
   });
   markers.push(marker);
 }
-
-
+//
+//
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   var waypts = [];
-  $('input[type="checkbox"]').click(function(){
-    if($(#ritzCarlton).prop("checked") == true){
+  if($('#ritzCarlton').is(':checked')){
       waypts.push({
-        location: ritzCarlton;,
+        location: {lat : 45.500, lng: -73.578},
         stopover: true
-      });
-    }
-    if($(#leCrystal).prop("checked") == true){
+    });
+  }
+  if($('#leCrystal').is(':checked')){
       waypts.push({
-        location: leCrystal;,
+        location: {lat:45.497, lng: -73.573},
         stopover: true
-      });
-    }
-    if($(#sofitelMontreal).prop("checked") == true){
+    });
+  }
+  if($('#leSaintJames').is(':checked')){
       waypts.push({
-        location: sofitelMontreal;,
+        location: leSaintJames,
         stopover: true
-      });
-    }
-    if($(#leSaintJames).prop("checked") == true){
+    });
+  }
+  if($('#chateauVaudreuil').is(':checked')){
       waypts.push({
-        location: leSaintJames;,
+        location: chateauVaudreuil,
         stopover: true
-      });
-    }
-    if($(#chateauVaudreuil).prop("checked") == true){
-      waypts.push({
-        location: chateauVaudreuil;,
-        stopover: true
-      });
-    }
-    if($(#mountStephen).prop("checked") == true){
-      waypts.push({
-        location: mountStephen;,
-        stopover: true
-      });
-    }
-    if($(#placeDarmes).prop("checked") == true){
-      waypts.push({
-        location: placeDarmes;,
-        stopover: true
-      });
-    }
-    if($(#gardenInn).prop("checked") == true){
-      waypts.push({
-        location: gardenInn;,
-        stopover: true
-      });
-    }
-    if($(#leDauphin).prop("checked") == true){
-      waypts.push({
-        location: leDauphin;,
-        stopover: true
-      });
-    }
-    if($(#interContinental).prop("checked") == true){
-      waypts.push({
-        location: interContinental;,
-        stopover: true
-      });
-    }
-    if($(#laRonde).prop("checked") == true){
-      waypts.push({
-        location: laRonde;,
-        stopover: true
-      });
-    }
-    if($(#mountRoyal).prop("checked") == true){
-      waypts.push({
-        location: mountRoyal;,
-        stopover: true
-      });
-    }
-    if($(#notreDame).prop("checked") == true){
-      waypts.push({
-        location: notreDame;,
-        stopover: true
-      });
-    }
-    if($(#olympicStadium).prop("checked") == true){
-      waypts.push({
-        location: olympicStadium;,
-        stopover: true
-      });
-    }
-  });
-
+    });
+  }
+}
+    // if($(#leCrystal).prop("checked") == true){
+    //   waypts.push({
+    //     location: leCrystal;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#sofitelMontreal).prop("checked") == true){
+    //   waypts.push({
+    //     location: sofitelMontreal;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#leSaintJames).prop("checked") == true){
+    //   waypts.push({
+    //     location: leSaintJames;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#chateauVaudreuil).prop("checked") == true){
+    //   waypts.push({
+    //     location: chateauVaudreuil;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#mountStephen).prop("checked") == true){
+    //   waypts.push({
+    //     location: mountStephen;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#placeDarmes).prop("checked") == true){
+    //   waypts.push({
+    //     location: placeDarmes;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#gardenInn).prop("checked") == true){
+    //   waypts.push({
+    //     location: gardenInn;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#leDauphin).prop("checked") == true){
+    //   waypts.push({
+    //     location: leDauphin;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#interContinental).prop("checked") == true){
+    //   waypts.push({
+    //     location: interContinental;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#laRonde).prop("checked") == true){
+    //   waypts.push({
+    //     location: laRonde;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#mountRoyal).prop("checked") == true){
+    //   waypts.push({
+    //     location: mountRoyal;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#notreDame).prop("checked") == true){
+    //   waypts.push({
+    //     location: notreDame;,
+    //     stopover: true
+    //   });
+    // }
+    // if($(#olympicStadium).prop("checked") == true){
+    //   waypts.push({
+    //     location: olympicStadium;,
+    //     stopover: true
+    //   });
+    // }
 
     directionsService.route({
     origin: "montreal,quebec",
