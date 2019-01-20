@@ -387,6 +387,12 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         stopover: true
     });
   }
+  if($('#sofitelMontreal').is(':checked')){
+      waypts.push({
+        location: sofitelMontreal,
+        stopover: true
+    });
+  }
   if($('#leSaintJames').is(':checked')){
       waypts.push({
         location: leSaintJames,
@@ -398,97 +404,143 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         location: chateauVaudreuil,
         stopover: true
     });
-    alert("okay");
   }
-}
-    // if($(#leCrystal).prop("checked") == true){
-    //   waypts.push({
-    //     location: leCrystal;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#sofitelMontreal).prop("checked") == true){
-    //   waypts.push({
-    //     location: sofitelMontreal;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#leSaintJames).prop("checked") == true){
-    //   waypts.push({
-    //     location: leSaintJames;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#chateauVaudreuil).prop("checked") == true){
-    //   waypts.push({
-    //     location: chateauVaudreuil;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#mountStephen).prop("checked") == true){
-    //   waypts.push({
-    //     location: mountStephen;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#placeDarmes).prop("checked") == true){
-    //   waypts.push({
-    //     location: placeDarmes;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#gardenInn).prop("checked") == true){
-    //   waypts.push({
-    //     location: gardenInn;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#leDauphin).prop("checked") == true){
-    //   waypts.push({
-    //     location: leDauphin;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#interContinental).prop("checked") == true){
-    //   waypts.push({
-    //     location: interContinental;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#laRonde).prop("checked") == true){
-    //   waypts.push({
-    //     location: laRonde;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#mountRoyal).prop("checked") == true){
-    //   waypts.push({
-    //     location: mountRoyal;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#notreDame).prop("checked") == true){
-    //   waypts.push({
-    //     location: notreDame;,
-    //     stopover: true
-    //   });
-    // }
-    // if($(#olympicStadium).prop("checked") == true){
-    //   waypts.push({
-    //     location: olympicStadium;,
-    //     stopover: true
-    //   });
-    // }
+  if($('#mountStephen').is(':checked')){
+      waypts.push({
+        location: mountStephen,
+        stopover: true
+    });
+  }
+  if($('#placeDarmes').is(':checked')){
+      waypts.push({
+        location: placeDarmes,
+        stopover: true
+    });
+  }
+  if($('#gardenInn').is(':checked')){
+      waypts.push({
+        location: gardenInn,
+        stopover: true
+    });
+  }
+  if($('#leDauphin').is(':checked')){
+      waypts.push({
+        location: leDauphin,
+        stopover: true
+    });
+  }
+  if($('#interContinental').is(':checked')){
+      waypts.push({
+        location: interContinental,
+        stopover: true
+    });
+  }
+  if($('#laRonde').is(':checked')){
+      waypts.push({
+        location: laRonde,
+        stopover: true
+    });
+  }
+  if($('#mountRoyal').is(':checked')){
+      waypts.push({
+        location: mountRoyal,
+        stopover: true
+    });
+  }
+  if($('#notreDame').is(':checked')){
+      waypts.push({
+        location: notreDame,
+        stopover: true
+    });
+  }
+  if($('#olympicStadium').is(':checked')){
+      waypts.push({
+        location: olympicStadium,
+        stopover: true
+    });
+  }
+  if($('#mountRoyalPark').is(':checked')){
+      waypts.push({
+        location: mountRoyalPark,
+        stopover: true
+    });
+  }
+  if($('#oldMontreal').is(':checked')){
+      waypts.push({
+        location: oldMontreal,
+        stopover: true
+    });
+  }
+  if($('#biosphereMuseum').is(':checked')){
+      waypts.push({
+        location: biosphereMuseum,
+        stopover: true
+    });
+  }
+  if($('#glowParty').is(':checked')){
+      waypts.push({
+        location: glowParty,
+        stopover: true
+    });
+  }
+  if($('#iglooFest').is(':checked')){
+      waypts.push({
+        location: iglooFest,
+        stopover: true
+    });
+  }
+  if($('#fireworks').is(':checked')){
+      waypts.push({
+        location: fireworks,
+        stopover: true
+    });
+  }
+  if($('#lanZhou').is(':checked')){
+      waypts.push({
+        location: lanZhou,
+        stopover: true
+    });
+  }
+  if($('#imperial').is(':checked')){
+      waypts.push({
+        location: imperial,
+        stopover: true
+    });
+  }
+  if($('#deliceOriental').is(':checked')){
+      waypts.push({
+        location: deliceOriental,
+        stopover: true
+    });
+  }
+  if($('#laBanquise').is(':checked')){
+      waypts.push({
+        location: laBanquise,
+        stopover: true
+    });
+  }
+  if($('#mooseBawr').is(':checked')){
+      waypts.push({
+        location: mooseBawr,
+        stopover: true
+    });
+  }
+  if($('#orangeJulep').is(':checked')){
+      waypts.push({
+        location: orangeJulep,
+        stopover: true
+    });
+  }
+
 
     directionsService.route({
-    origin: "montreal,quebec",
-    destination: "montreal, quebec",
-    waypoints: waypts,
+    origin: waypts[0],
+    destination: waypts[0],
+    waypoints: waypts[1:],
     optimizeWaypoints: true,
     travelMode: 'DRIVING'
   }, function(response, status) {
     if (status === 'OK') {
-      alert("hello");
       directionsDisplay.setDirections(response);
       var route = response.routes[0];
       var summaryPanel = document.getElementById('directions-panel');
@@ -508,7 +560,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   });
 
 
-
+}
 
 
 
